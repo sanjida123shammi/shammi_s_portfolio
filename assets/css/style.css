@@ -1,0 +1,886 @@
+/* 
+	Theme: Personal Portfolio of Sanjida Shammi
+	Author: Sanjida Shammi
+	Live URL: https://sanjida123shammi.github.io/
+
+	Primary Color: #8ff3ff
+	Secondary Color: #003d45
+
+	Heading Font Style: Poppins
+	Font Style Except Heading: Lato
+ */
+
+
+/****** Google Fonts ******/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*
+* ==========================
+* Global CSS Start
+* ==========================
+*/
+*{
+	margin: 0;
+	padding: 0;	
+}
+body{
+	background: #02050A;	
+	font-family: "Lato", sans-serif;
+	font-family: "Poppins", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;	
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+}
+p, li{
+	font-family: "Lato", sans-serif;
+	color: #A2A2A2;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+
+/* --- Side Nav Menu CSS --- */
+nav.side-nav{
+  position: fixed;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 2;
+}
+nav.side-nav ul{
+	display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+nav.side-nav .nav-icon-box{
+  position: relative;
+  background: #003d45;
+  border-radius: 3px;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  line-height: 40px;
+  transition: all 0.3s ease-in-out;
+}
+nav.side-nav .nav-icon-box a, nav.bottom-nav .nav-icon-box a{
+	display: block;
+}
+nav.side-nav .nav-icon-box a i, nav.bottom-nav .nav-icon-box a i{
+	font-size: 18px;
+	color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+nav.side-nav .nav-icon-box a h2{
+	position: absolute;
+  background: #8ff3ff;
+  border-radius: 3px;
+  padding: 0 22px 0 20px;
+  top: 0;
+  right: 0;
+  height: 38px;
+  opacity: 0;
+  z-index: -1;
+  line-height: 39px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+	color: #212529;
+  transition: all 0.3s ease-in-out;
+}
+nav.side-nav .nav-icon-box.active, nav.side-nav .nav-icon-box:hover, nav.bottom-nav .nav-icon-box.active, nav.bottom-nav .nav-icon-box:hover{
+	background: #8ff3ff;
+}
+nav.side-nav .nav-icon-box.active a i, nav.side-nav .nav-icon-box:hover i.fa-solid, nav.bottom-nav .nav-icon-box.active a i, nav.bottom-nav .nav-icon-box:hover i.fa-solid{
+	color: #212529;
+}
+nav.side-nav .nav-icon-box:hover .nav-text{
+	right: 24px;
+	opacity: 1;
+}
+
+/* --- Bottom Nav CSS --- */
+nav.bottom-nav{
+	display: none;
+	position: fixed;
+	background: #0d1314;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+nav.bottom-nav ul{
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin: 0;
+  height: 60px;
+}
+nav.bottom-nav .nav-icon-box{
+  background: #003d45;
+  border-radius: 3px;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+nav.bottom-nav .nav-icon-box a i{
+	font-size: 15px;
+}
+
+/* --- Page Headline CSS --- */
+.headline{
+	position: relative;
+	margin: 0 auto;
+  padding: 80px 0;
+  z-index: 1;
+}
+.headline h2{
+  font-size: 56px;
+  font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+.headline h2 span{
+  color: #8ff3ff;
+}
+.back-text{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.back-text span {
+  font-size: 120px;
+  font-weight: 800;
+	text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #182326;
+}
+/****** Global CSS End ******/
+
+
+/*
+* ==========================
+* Home Page CSS Start
+* ==========================
+*/
+.header-section{
+	background: url('../img/logo/banner_bg.png') no-repeat center top;
+	background-size: cover;
+}
+.logo {
+  margin-top: 50px;
+  width: 75%;
+}
+.hero{
+	min-height: 90.6vh;
+}
+.header-section h1, .title, .word{
+	font-size: 55px;
+	font-weight: 600;
+	text-transform: uppercase;
+	word-spacing: 8px;
+	color: #fff;
+}
+.hero p{
+	margin: 35px 0;
+	padding-right: 15%;
+	line-height: 1.7;
+}
+
+/* --- CV Button CSS --- */
+.btn_cv{
+	position: relative;
+  border-radius: 5px;
+  padding: 13px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #212529;
+	overflow: hidden;
+  transition: 0.2s all ease-in-out;
+}
+.btn_cv::before{
+	content: "";
+	position: absolute;
+	background: #003d45;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+  transition: 0.4s all ease-in-out;
+}
+.btn_cv::after{
+	content: "";
+	position: absolute;
+	background: #8ff3ff;
+  border-radius: 5px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+.btn_cv:hover{
+	background: transparent;
+	color: #fff;
+}
+.btn_cv:hover.btn_cv::before{	left: 0px;}
+.btn-more i{	font-size: 18px;}
+
+/* --- Social Link CSS --- */
+ul.social-icon{
+	display: flex;
+	gap: 25px;
+	margin-top: 40px;
+}
+ul.social-icon li{
+	background: #003d45;
+  border-radius: 3px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+ul.social-icon li:hover{
+	background: #8ff3ff;
+}
+ul.social-icon li a{
+	font-size: 20px;
+	color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+ul.social-icon li:hover .fa-brands{
+	color: #212529;
+}
+
+/* --- Animated text of Home CSS --- */
+@-webkit-keyframes web { 0% {transform: translateY(0);} 26.6666666667% {transform: translateY(0);	opacity: 1;} 33.3333333333% {transform: translateY(-100%);	opacity: 0;}	33.3343333333% {transform: translateY(100%);	opacity: 0;}	33.3363333333% {transform: translateY(100%);	opacity: 1;}	93.3333333333% {transform: translateY(100%);}	100% {transform: translateY(0);}}
+@keyframes web { 0% {transform: translateY(0);}	26.6666666667% {transform: translateY(0);	opacity: 1;}	33.3333333333% {transform: translateY(-100%);	opacity: 0;}	33.3343333333% {transform: translateY(100%);	opacity: 0;}	33.3363333333% {transform: translateY(100%);	opacity: 1;}	93.3333333333% {transform: translateY(100%);}	100% {transform: translateY(0);}}
+@-webkit-keyframes free { 0% {transform: translateY(0);}	26.6666666667% {transform: translateY(0);}	33.3333333333% {transform: translateY(-100%);}	60% {transform: translateY(-100%);	opacity: 1;}	66.6666666667% {transform: translateY(-200%);	opacity: 0;}	66.6676666667% {transform: translateY(0);}	66.6696666667% {transform: translateY(0);	opacity: 1;}	100% {transform: translateY(0);}}
+@keyframes free { 0% {transform: translateY(0);}	26.6666666667% {transform: translateY(0);}	33.3333333333% {transform: translateY(-100%);}	60% {transform: translateY(-100%);    opacity: 1;}	66.6666666667% {transform: translateY(-200%);    opacity: 0;}	66.6676666667% {transform: translateY(0);}	66.6696666667% {transform: translateY(0);    opacity: 1;}	100% {transform: translateY(0);}}
+@-webkit-keyframes design { 0% {transform: translateY(-300%);}	0.0001% {transform: translateY(0);}	26.6666666667% {transform: translateY(0);}	33.3333333333% {transform: translateY(-100%);}	60% {transform: translateY(-100%);}	66.6666666667% {transform: translateY(-200%);}	93.3333333333% {transform: translateY(-200%);    opacity: 1;}	100% {transform: translateY(-300%);    opacity: 0;}}
+@keyframes design {	0% {transform: translateY(-300%);}	0.0001% {transform: translateY(0);}	26.6666666667% {transform: translateY(0);}	33.3333333333% {transform: translateY(-100%);}	60% {transform: translateY(-100%);}	66.6666666667% {transform: translateY(-200%);}	93.3333333333% {transform: translateY(-200%);    opacity: 1;}	100% {transform: translateY(-300%);    opacity: 0;}}
+
+.word {	display: flex;	grid-column: 2;	grid-row: auto; color: #8ff3ff;}
+.word span {  display: inline-block; }
+
+.web span:nth-child(1) {-webkit-animation: web 6s ease-in-out both 0.05s infinite;		animation: web 6s ease-in-out both 0.05s infinite;}
+.free span:nth-child(1) {-webkit-animation: free 6s ease-in-out both 0.05s infinite;	animation: free 6s ease-in-out both 0.05s infinite;}
+.design span:nth-child(1) {-webkit-animation: design 6s ease-in-out both 0.05s infinite;    animation: design 6s ease-in-out both 0.05s infinite;}
+.web span:nth-child(2) {-webkit-animation: web 6s ease-in-out both 0.1s infinite;       animation: web 6s ease-in-out both 0.1s infinite;}
+.free span:nth-child(2) {-webkit-animation: free 6s ease-in-out both 0.1s infinite;     animation: free 6s ease-in-out both 0.1s infinite;}
+.design span:nth-child(2) {-webkit-animation: design 6s ease-in-out both 0.1s infinite;     animation: design 6s ease-in-out both 0.1s infinite;}
+.web span:nth-child(3) {-webkit-animation: web 6s ease-in-out both 0.15s infinite;      animation: web 6s ease-in-out both 0.15s infinite;}
+.free span:nth-child(3) {-webkit-animation: free 6s ease-in-out both 0.15s infinite;    animation: free 6s ease-in-out both 0.15s infinite;}
+.design span:nth-child(3) {-webkit-animation: design 6s ease-in-out both 0.15s infinite;  	animation: design 6s ease-in-out both 0.15s infinite;}
+.web span:nth-child(4) {-webkit-animation: web 6s ease-in-out both 0.2s infinite;  	    animation: web 6s ease-in-out both 0.2s infinite;}
+.free span:nth-child(4) {-webkit-animation: free 6s ease-in-out both 0.2s infinite;  	animation: free 6s ease-in-out both 0.2s infinite;}
+.design span:nth-child(4) {-webkit-animation: design 6s ease-in-out both 0.2s infinite;    	animation: design 6s ease-in-out both 0.2s infinite;}
+.web span:nth-child(5) {-webkit-animation: web 6s ease-in-out both 0.25s infinite;  	animation: web 6s ease-in-out both 0.25s infinite;}
+.free span:nth-child(5) {-webkit-animation: free 6s ease-in-out both 0.25s infinite;  	animation: free 6s ease-in-out both 0.25s infinite;}
+.design span:nth-child(5) {-webkit-animation: design 6s ease-in-out both 0.25s infinite;  	animation: design 6s ease-in-out both 0.25s infinite;}
+.web span:nth-child(6) {-webkit-animation: web 6s ease-in-out both 0.3s infinite;  	   animation: web 6s ease-in-out both 0.3s infinite;}
+.free span:nth-child(6) {-webkit-animation: free 6s ease-in-out both 0.3s infinite;    animation: free 6s ease-in-out both 0.3s infinite;}
+.design span:nth-child(6) {-webkit-animation: design 6s ease-in-out both 0.3s infinite;  	animation: design 6s ease-in-out both 0.3s infinite;}
+.web span:nth-child(7) {-webkit-animation: web 6s ease-in-out both 0.35s infinite;		animation: web 6s ease-in-out both 0.35s infinite;}
+.free span:nth-child(7) {-webkit-animation: free 6s ease-in-out both 0.35s infinite;	animation: free 6s ease-in-out both 0.35s infinite;}
+.design span:nth-child(7) {-webkit-animation: design 6s ease-in-out both 0.35s infinite;    animation: design 6s ease-in-out both 0.35s infinite;}
+.web span:nth-child(8) {-webkit-animation: web 6s ease-in-out both 0.4s infinite;       animation: web 6s ease-in-out both 0.4s infinite;}
+.free span:nth-child(8) {-webkit-animation: free 6s ease-in-out both 0.4s infinite;     animation: free 6s ease-in-out both 0.4s infinite;}
+.design span:nth-child(8) {-webkit-animation: design 6s ease-in-out both 0.4s infinite;     animation: design 6s ease-in-out both 0.4s infinite;}
+.web span:nth-child(9) {-webkit-animation: web 6s ease-in-out both 0.45s infinite;      animation: web 6s ease-in-out both 0.45s infinite;}
+.free span:nth-child(9) {-webkit-animation: free 6s ease-in-out both 0.45s infinite;    animation: free 6s ease-in-out both 0.45s infinite;}
+.design span:nth-child(9) {-webkit-animation: design 6s ease-in-out both 0.45s infinite;    animation: design 6s ease-in-out both 0.45s infinite;}
+.web span:nth-child(10) {-webkit-animation: web 6s ease-in-out both 0.5s infinite; 	    animation: web 6s ease-in-out both 0.5s infinite;}
+.free span:nth-child(10) {-webkit-animation: free 6s ease-in-out both 0.5s infinite;    animation: free 6s ease-in-out both 0.5s infinite;}
+.design span:nth-child(10) {-webkit-animation: design 6s ease-in-out both 0.5s infinite;    animation: design 6s ease-in-out both 0.5s infinite;}
+.web span:nth-child(11) {-webkit-animation: web 6s ease-in-out both 0.55s infinite;	    animation: web 6s ease-in-out both 0.55s infinite;}
+.free span:nth-child(11) {-webkit-animation: free 6s ease-in-out both 0.55s infinite;  	    animation: free 6s ease-in-out both 0.55s infinite;}
+.design span:nth-child(11) {-webkit-animation: design 6s ease-in-out both 0.55s infinite;   animation: design 6s ease-in-out both 0.55s infinite;}
+.web span:nth-child(12) {-webkit-animation: web 6s ease-in-out both 0.6s infinite; 	    animation: web 6s ease-in-out both 0.6s infinite;}
+.free span:nth-child(12) {-webkit-animation: free 6s ease-in-out both 0.6s infinite;	animation: free 6s ease-in-out both 0.6s infinite;}
+.design span:nth-child(12) {-webkit-animation: design 6s ease-in-out both 0.6s infinite;    animation: design 6s ease-in-out both 0.6s infinite;}
+.web span:nth-child(13) {-webkit-animation: web 6s ease-in-out both 0.65s infinite; 	    animation: web 6s ease-in-out both 0.65s infinite;}
+.free span:nth-child(13) {-webkit-animation: free 6s ease-in-out both 0.65s infinite;        animation: free 6s ease-in-out both 0.65s infinite;}
+.design span:nth-child(13) {-webkit-animation: design 6s ease-in-out both 0.65s infinite;    animation: design 6s ease-in-out both 0.65s infinite;}
+.title {
+  display: grid;
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: auto;
+  overflow: hidden;
+  max-height: 4vw;
+  line-height: 5vw;
+}
+/****** Home Page CSS End ******/
+
+
+/*
+* ==========================
+* About Page CSS Start
+* ==========================
+*/
+.about-section, .portfolio-section{
+	margin-bottom: 50px;
+}
+
+/* About & Portfolio Section's Tab CSS */
+.about-section .tabs, .portfolio-section .portfolio-tabs{
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+.about-section .tabs ul, .portfolio-section .portfolio-tabs ul{
+	display: flex;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+.about-section .tabs ul li, .portfolio-section .portfolio-tabs ul li{
+	background: #003d45;
+  border-radius: 6px;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.about-section .tabs ul li:hover, .about-section .tabs ul li.active, .portfolio-section .portfolio-tabs ul li:hover, .portfolio-section .portfolio-tabs ul li.mixitup-control-active{
+	background: #8ff3ff;
+  color: #212529;
+}
+
+/* About Row CSS */
+.about-row{
+	display: flex;
+	margin-top: 20px;
+	align-items: center;
+}
+.my_photo{
+	width: 80%;
+}
+.about-info h3, .contact-intro h3, .edu-row .block-title h3{
+	margin-bottom: 15px;
+	font-size: 23px;
+	font-weight: 600;
+}
+.about-info p, .about-info li, .timeline .right-part p{
+	margin-bottom: 15px;
+  word-spacing: 2px;
+  line-height: 26px;
+}
+.about-info ul{
+	margin-bottom: 35px;
+}
+.about-info li{
+	margin: 6px 0 0;
+}
+.about-info li span{
+	display: inline-block;
+  width: 140px;
+	color: #ebebeb;
+}
+.about-info li a{
+	color: #ebebeb;
+}
+
+/* Skill Row CSS */
+.skill-row, .edu-row{
+	margin-top: 30px;
+}
+.skills{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding-left: 30px;
+}
+.skill-box{
+	max-width: 200px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.skill-box .logo-box{
+  background: #003d454d;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 40px 15px 30px;
+  height: 200px;
+	transition: all 0.3s ease-in-out;
+}
+.skill-box:hover .logo-box{
+	background: #003d4566;
+  border: 1px solid #8ff3ff;
+}
+.skill-box p{
+	text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ebebeb;
+}
+.skill-box:hover p, .skill-box .logo-box p{
+  color: #8ff3ff;
+}
+.skill-box:hover .logo-box p{
+  color: #fff;
+}
+.skill-box .logo-img{
+	margin: 0 auto;
+	width: 60px;
+	height: 110px;
+	transition: all 0.3s ease-in-out;
+}
+.skill-box:hover .logo-img{
+	width: 70px;
+}
+.php .logo-img{
+	padding-top: 26px;
+}
+.tailwind .logo-img, .sass .logo-img{
+	padding-top: 20px;
+}
+.skill-box .logo-img img{
+	filter: grayscale(90%);
+	transition: all 0.3s ease-in-out;
+}
+.skill-box:hover .logo-img img{
+	filter: grayscale(0%);
+}
+
+/* Education & Experience Row CSS */
+.edu-row .block-title h3{
+	position: relative;
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-left: 30px;
+	letter-spacing: 1px;
+}
+.edu-row .block-title h3:after{
+	content: "";
+	position: absolute;
+	display: block;
+	border: 1px solid #8ff3ff;
+	width: 100%;
+	left: 0;
+	bottom: -6px;
+}
+.edu-row .timeline .timeline-item{
+	position: relative;
+  display: table;
+  table-layout: fixed;
+  padding-bottom: 25px;
+  width: 95%;
+}
+.edu-row .timeline .side-line{
+  position: absolute;
+  top: 0;
+  left: 1%;
+  bottom: 0;
+  width: 1px;
+  background-color: #666;
+}
+.edu-row .timeline .side-line:after{
+  content: '';
+  display: block;
+  background-color: #02050A;
+  border: 2px solid #8ff3ff;
+  border-radius: 50%;
+  margin-top: 35px;
+  margin-left: -7px;
+  width: 15px;
+  height: 15px;
+}
+.timeline .right-part{
+  width: 95%;
+  display: table-cell;
+  background: #003d454d;
+  border-radius: 7px;
+  padding: 35px;
+  vertical-align: top;
+}
+.timeline .right-part .item-period{
+  margin: 0px 0 7px;
+  font-size: 15px;
+  line-height: 1.4em
+}
+.timeline .right-part .item-period i{
+  margin-right: 5px;
+}
+.timeline .right-part .item-institute{
+  display: block;
+  margin: 0 0 15px;
+  font-size: 13px;
+  line-height: 1.45em;
+  color: #aaa;
+}
+.timeline .right-part .divider{
+  margin: 0 0 15px;
+	background: #666;
+	width: 30%;
+	height: 1px;
+}
+.timeline .right-part .item-title{
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.timeline .right-part p{
+	margin: 0;
+  font-size: 15px;
+}
+/****** About Page CSS End ******/
+
+
+/*
+* ==========================
+* Testimonial Section CSS Start
+* ==========================
+*/
+.testimonial-section{
+  background: #003d4533;
+	margin: 80px 0;
+	padding-bottom: 60px;
+}
+
+/* OWL Carousel CSS */
+.item{
+	background: #003d454d;
+	border-radius: 10px;
+	margin: 10px auto;
+	padding: 30px 40px;
+	width: 95%;
+}
+.client{
+	display: flex;
+	align-items: center;
+}
+.client, .client-review{
+	margin-bottom: 25px;
+}
+.client-review p{
+	font-size: 16px;
+  line-height: 26px;
+  word-spacing: 2px;
+}
+.client-img{
+	width: 59px;
+	height: 59px;
+	overflow: hidden;
+}
+.client-img img{
+	border-radius: 50%;
+}
+.client-info{
+	margin-left: 30px;
+}
+.client-info h5{
+	margin-top: 6px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.ratings i{
+	font-size: 16px;
+	color: #FFC107;
+}
+.owl-dots{
+	margin-top: 60px !important;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-dots .owl-dot span{
+	background: transparent !important;
+	border: 1px solid #999999;
+}
+.owl-dots .owl-dot.active span{
+	width: 12px !important;
+	height: 12px !important;
+	background: #fff !important;
+	border: 1px solid #fff;
+}
+/****** Testimonial Section CSS End ******/
+
+
+/*
+* ==========================
+* FAQ Section CSS Start
+* ==========================
+*/
+.faq-section{
+	margin-bottom: 80px;
+}
+/* Accordion CSS */
+.accordion__wrapper {
+  background-color: #003d454d;
+  border-radius: 10px;
+  padding: 55px 75px;
+  width: 100%;
+}
+.accordion__title{
+  margin-bottom: 4rem;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+.accordion {
+  border-bottom: 0.1rem solid #8ff3ff40;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+} 
+.accordion__icon {
+  background-color: #8ff3ff;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-size: 20px;
+  color: #171f28;
+}
+.accordion__question{
+  font-size: 18px;
+  font-weight: 500;
+  color: #dedede;
+}
+.accordion__answer{
+  padding: 2rem 0;
+  line-height: 26px;
+  word-spacing: 2px;
+}
+.accordion__content{
+  overflow: hidden;
+  height: 0;
+  transition: all 0.4s ease-in-out;
+}
+/****** FAQ Section CSS End ******/
+
+
+/*
+* ==========================
+* Portfolio Page CSS Start
+* ==========================
+*/
+.portfolio-section .portfolio-tabs ul li a{
+	color: #fff;
+}
+.portfolio-section .portfolio-tabs ul li:hover a, .portfolio-section .portfolio-tabs ul li.mixitup-control-active a{
+	color: #212529;
+}
+.item-grid{
+	margin-top: 25px;
+}
+.item-grid .port {
+  padding: 10px 20px;
+}
+.item-grid .item{
+	position: relative;
+  background: rgb(143 243 255 / 10%);
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 30px 30px 0 30px;
+  overflow: hidden;
+}
+.item-grid .item .item-intro{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, rgb(16 63 69 / 80%), rgb(2 5 10 / 70%));
+  border-radius: 10px;
+  width: 94%;
+  padding: 30px;
+  bottom: 30px;
+  left: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.item-grid .item .item-intro h5.category{
+	font-size: 16px;
+  margin-bottom: 10px;
+	color: #a2a2a2;
+}
+.item-grid .item .item-intro h3.name{
+	font-size: 25px;
+}
+.item-intro i{
+	font-size: 25px;
+	color: #fff;
+}
+.item-grid .item:hover .item-intro{
+	opacity: 1;
+}
+.portfolio-img{	
+	height: 600px;
+}
+.portfolio-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top center;
+	transition: all 4s ease-in-out;
+}
+.item-grid .item:hover .screenshot{
+	object-position: bottom center;
+}
+/****** Portfolio Page CSS End ******/
+
+
+/*
+* ==========================
+* Contact Page CSS Start
+* ==========================
+*/
+.contact-section{
+	margin: 15px 0px 75px;
+}
+.contact-row{
+	position: relative;
+	background: url('../img/map-light.png') no-repeat center left;
+	background-size: 75%;
+	z-index: 1;
+}
+.contact-row::before{
+	content: "";
+	position: absolute;
+	background: #02050A;
+	opacity: .45;
+	width: 80%;
+	height: 100%;
+	z-index: -1;
+}
+.contact-intro{
+	margin-bottom: 30px;
+}
+.info-box{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 18px;
+}
+.info-icon i{
+	font-size: 25px;
+	color: #8ff3ff;
+}
+.info h4{
+	margin-bottom: 5px;
+	font-size: 17px;
+}
+.info p{
+	font-size: 15px;
+}
+
+/* --- Social Platform CSS --- */
+.message{
+	margin-top: 30px;
+}
+.message ul.social-icon{
+	gap: 22px;
+	margin-top: 0px;
+}
+
+/* --- Contact Form CSS --- */
+.form-box{
+	background: linear-gradient(to right, rgb(16 63 69 / 50%), rgb(23 31 40 / 40%));
+	border-radius: 10px;
+	padding: 35px;
+}
+.form-box label{
+	font-size: 15px;
+	color: #fff;
+}
+.form-box label span{
+	color: #e33e32;
+}
+.form-box input, .form-box textarea{
+	background: #02050A;
+	border: none;
+	padding: 14px 20px;
+	font-size: 15px;
+	color: #A2A2A2;
+}
+.form-box input:focus, .form-box textarea:focus{
+	background: #02050A;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	color: #A2A2A2;
+}
+.form-box .send-btn{
+	background: #8ff3ff;
+	padding: 14px;
+	width: 35%;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+.form-box .send-btn:hover{
+	background: #003d45;
+	color: #fff;
+}
+.form-box .send-btn:focus{
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
+/* Footer CSS */
+footer{
+	margin-bottom: 40px;}
+footer p{
+	font-size: 14px;
+	text-align: center;
+}
+footer p a{
+	font-family: "Dancing Script", cursive;
+	font-size: 16px;
+	color: #8ff3ff;
+}
+
+/* Email Message Alert */
+div:where(.swal2-container) div:where(.swal2-popup) {
+  background: #003d45 !important;
+  color: #ffffff !important;
+}
+div:where(.swal2-container) .swal2-html-container {
+  font-size: 16px !important;
+  color: #d0cfcf !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: #8ff3ff !important;
+  color: #171f28 !important;
+}
+/****** Contact Page CSS End ******/

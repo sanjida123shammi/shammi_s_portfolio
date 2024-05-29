@@ -1,0 +1,51 @@
+@media (max-width: 1440px){
+	.nav-icon-box, .nav-icon-box a h2, ul.social-icon li {width: 35px;    height: 35px;    line-height: 35px;}
+	.nav-icon-box a h2 {width: initial;}
+	.nav-icon-box a i {font-size: 17px;}
+	.hero p {margin: 28px 0;}
+	.btn_cv {padding: 11px 20px;	font-size: 13px;}
+	ul.social-icon {margin-top: 35px;}
+	ul.social-icon li a {font-size: 18px;}
+	.header-section h1, .title, .word {font-size: 48px;}
+	.back-text span {font-size: 110px;}
+	.headline h2 {font-size: 52px;}
+	.about-section .tabs ul li, .portfolio-section .portfolio-tabs ul li {padding: 13px 32px;    font-size: 14px;}
+	.my_photo {width: 85%;}
+	.client-img {width: 52px;    height: 52px;}
+	.client, .client-review {margin-bottom: 30px;}
+	.accordion__question {font-size: 16px;}
+	.item-grid .port {padding: 0;}
+	.item-grid .item {margin-bottom: 20px;}
+}
+
+
+@media (max-width: 1306px){
+	.back-text span {font-size: 99px;}
+	.headline h2 {font-size: 50px;}
+	.about-section .tabs ul li, .portfolio-section .portfolio-tabs ul li {padding: 12px 30px;    font-size: 14px;}
+}
+
+
+@media (max-width: 1199px){	
+	.back-text span {font-size: 83px;}
+	.header-section h1, .title, .word, .headline h2 {font-size: 42px;}
+	.about-info p, .about-info li, .timeline .right-part p {word-spacing: 2px;    line-height: 24px;}
+	.about-info li span {width: 120px;}
+	.item {width: 80%;}
+	.portfolio-img {height: 530px;}	
+}
+
+
+@media (max-width: 1024px){
+	.back-text {left: 45%;    transform: translate(-40%, -50%);}
+}
+
+
+@media (max-width: 991px){
+	nav.side-nav{display: none;}
+	nav.bottom-nav{display: block;}
+	.header-section h1{margin-bottom: 10px;}
+	.title {max-height: 6vw;    line-height: 6vw;}
+    .hero p {margin: 20px 0 28px;}
+    footer {margin-bottom: 100px;}
+}
