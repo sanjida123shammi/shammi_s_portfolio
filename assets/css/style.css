@@ -201,22 +201,27 @@ nav.bottom-nav .nav-icon-box a i{
 }
 .hero p{
 	margin: 35px 0;
-	padding-right: 15%;
+	padding-right: 30%;
+	font-size: 17px;
+	word-spacing: 2px;
 	line-height: 1.7;
 }
 
 /* --- CV Button CSS --- */
-.btn_cv{
+.btn_cv, .form-box .send-btn{
 	position: relative;
+	overflow: hidden;
   border-radius: 5px;
-  padding: 13px 20px;
+  padding: 14px;
+  width: 219px;
   font-weight: 500;
   font-size: 14px;
+  text-transform: uppercase;
   color: #212529;
-	overflow: hidden;
+  z-index: 0;
   transition: 0.2s all ease-in-out;
 }
-.btn_cv::before{
+.btn_cv::before, .form-box .send-btn::before{
 	content: "";
 	position: absolute;
 	background: #003d45;
@@ -227,7 +232,7 @@ nav.bottom-nav .nav-icon-box a i{
 	z-index: -1;
   transition: 0.4s all ease-in-out;
 }
-.btn_cv::after{
+.btn_cv::after, .form-box .send-btn::after{
 	content: "";
 	position: absolute;
 	background: #8ff3ff;
@@ -238,11 +243,11 @@ nav.bottom-nav .nav-icon-box a i{
 	height: 100%;
 	z-index: -2;
 }
-.btn_cv:hover{
+.btn_cv:hover, .form-box .send-btn:hover{
 	background: transparent;
 	color: #fff;
 }
-.btn_cv:hover.btn_cv::before{	left: 0px;}
+.btn_cv:hover.btn_cv::before, .form-box .send-btn:hover.send-btn::before{	left: 0px;}
 .btn-more i{	font-size: 18px;}
 
 /* --- Social Link CSS --- */
@@ -700,7 +705,7 @@ ul.social-icon li:hover .fa-brands{
 	margin-top: 25px;
 }
 .item-grid .port {
-  padding: 10px 20px;
+  padding: 10px;
 }
 .item-grid .item{
 	position: relative;
@@ -740,7 +745,7 @@ ul.social-icon li:hover .fa-brands{
 	opacity: 1;
 }
 .portfolio-img{	
-	height: 600px;
+	height: 450px;
 }
 .portfolio-img img{
 	width: 100%;
@@ -836,20 +841,9 @@ ul.social-icon li:hover .fa-brands{
 	color: #A2A2A2;
 }
 .form-box .send-btn{
-	background: #8ff3ff;
-	padding: 14px;
-	width: 35%;
 	display: flex;
 	gap: 10px;
 	justify-content: center;
-	font-size: 14px;
-	font-weight: 500;
-	text-transform: uppercase;
-	transition: all 0.3s ease-in-out;
-}
-.form-box .send-btn:hover{
-	background: #003d45;
-	color: #fff;
 }
 .form-box .send-btn:focus{
 	border: none;

@@ -2,8 +2,7 @@
 	.nav-icon-box, .nav-icon-box a h2, ul.social-icon li {width: 35px;    height: 35px;    line-height: 35px;}
 	.nav-icon-box a h2 {width: initial;}
 	.nav-icon-box a i {font-size: 17px;}
-	.hero p {margin: 28px 0;}
-	.btn_cv {padding: 11px 20px;	font-size: 13px;}
+	.hero p {margin: 28px 0;	font-size: 16.5px;}
 	ul.social-icon {margin-top: 35px;}
 	ul.social-icon li a {font-size: 18px;}
 	.header-section h1, .title, .word {font-size: 48px;}
@@ -16,6 +15,9 @@
 	.accordion__question {font-size: 16px;}
 	.item-grid .port {padding: 0;}
 	.item-grid .item {margin-bottom: 20px;}
+	.portfolio-img {height: 350px;}
+	.item-grid .item .item-intro {width: 93%;    padding: 20px;}
+	.item-grid .item .item-intro h3.name, .item-intro i {font-size: 22px;}
 }
 
 
