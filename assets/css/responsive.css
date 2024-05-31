@@ -44,6 +44,7 @@
 
 
 @media (max-width: 991px){
+	.header-section{background: url('../img/logo/res_bn_bg.png') no-repeat center top;	background-size: cover;}
 	nav.side-nav{display: none;}
 	nav.bottom-nav{display: block;}
 	.header-section h1{margin-bottom: 10px;}
