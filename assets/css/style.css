@@ -121,9 +121,8 @@ nav.bottom-nav{
 nav.bottom-nav ul{
 	display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 100px;
   margin: 0;
   height: 60px;
 }
@@ -136,9 +135,6 @@ nav.bottom-nav .nav-icon-box{
   line-height: 35px;
   text-align: center;
   transition: all 0.3s ease-in-out;
-}
-nav.bottom-nav .nav-icon-box a i{
-	font-size: 15px;
 }
 
 /* --- Page Headline CSS --- */
@@ -263,15 +259,16 @@ ul.social-icon li{
   height: 36px;
   line-height: 36px;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 ul.social-icon li:hover{
 	background: #8ff3ff;
 }
 ul.social-icon li a{
+	display: block;
 	font-size: 20px;
 	color: #fff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 ul.social-icon li:hover .fa-brands{
 	color: #212529;
@@ -552,6 +549,9 @@ ul.social-icon li:hover .fa-brands{
 .timeline .right-part p{
 	margin: 0;
   font-size: 15px;
+}
+.timeline .right-part p a{
+	color: #ebebeb;
 }
 /****** About Page CSS End ******/
 

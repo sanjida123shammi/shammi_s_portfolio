@@ -1,7 +1,7 @@
 @media (max-width: 1440px){
-	.nav-icon-box, .nav-icon-box a h2, ul.social-icon li {width: 35px;    height: 35px;    line-height: 35px;}
-	.nav-icon-box a h2 {width: initial;}
-	.nav-icon-box a i {font-size: 17px;}
+	nav.side-nav .nav-icon-box, ul.social-icon li {width: 35px;    height: 35px;    line-height: 35px;}
+	nav.side-nav .nav-icon-box a h2{height: 35px;    line-height: 36px;}
+	.nav-icon-box a i {font-size: 17px !important;}
 	.hero p {margin: 28px 0;	font-size: 16.5px;}
 	ul.social-icon {margin-top: 35px;}
 	ul.social-icon li a {font-size: 18px;}
@@ -44,11 +44,18 @@
 
 
 @media (max-width: 991px){
-	.header-section{background: url('../img/logo/res_bn_bg.png') no-repeat center top;	background-size: cover;}
+	.header-section{background: url('../img/logo/res_bn_bg.png') no-repeat right top;	background-size: cover;}
+	.logo {width: 34%;}
+	.hero {min-height: 79.5vh;	text-align: center;}
+	.header-section h1, .title, .word, .headline h2 {font-size: 40px;}
+	.header-section h1{margin-bottom: 10px;}
+	.title {max-height: 6vw;    line-height: 6vw;	justify-content: center;}
+    .hero p {margin: 20px 0 28px;	padding: 0 15%;		font-size: 16px;}
+    .btn_cv, .form-box .send-btn {font-weight: 600;    font-size: 13px;}
+    .btn-more i {font-size: 16px;}
+    ul.social-icon {justify-content: center;}
 	nav.side-nav{display: none;}
 	nav.bottom-nav{display: block;}
-	.header-section h1{margin-bottom: 10px;}
-	.title {max-height: 6vw;    line-height: 6vw;}
-    .hero p {margin: 20px 0 28px;}
+	nav.bottom-nav .nav-icon-box a i {font-size: 15px !important;}
     footer {margin-bottom: 100px;}
 }
