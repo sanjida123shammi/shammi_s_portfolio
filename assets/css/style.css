@@ -38,15 +38,9 @@ p, li{
 	font-family: "Lato", sans-serif;
 	color: #A2A2A2;
 }
-a{
-	text-decoration: none;
-}
-ul{
-	padding: 0;
-}
-li{
-	list-style: none;
-}
+a {	text-decoration: none; }
+ul {	padding: 0; }
+li {	list-style: none; }
 
 /* --- Side Nav Menu CSS --- */
 nav.side-nav{
@@ -72,9 +66,7 @@ nav.side-nav .nav-icon-box{
   line-height: 40px;
   transition: all 0.3s ease-in-out;
 }
-nav.side-nav .nav-icon-box a, nav.bottom-nav .nav-icon-box a{
-	display: block;
-}
+nav.side-nav .nav-icon-box a, nav.bottom-nav .nav-icon-box a {	display: block; }
 nav.side-nav .nav-icon-box a i, nav.bottom-nav .nav-icon-box a i{
 	font-size: 18px;
 	color: #fff;
@@ -97,12 +89,8 @@ nav.side-nav .nav-icon-box a h2{
 	color: #212529;
   transition: all 0.3s ease-in-out;
 }
-nav.side-nav .nav-icon-box.active, nav.side-nav .nav-icon-box:hover, nav.bottom-nav .nav-icon-box.active, nav.bottom-nav .nav-icon-box:hover{
-	background: #8ff3ff;
-}
-nav.side-nav .nav-icon-box.active a i, nav.side-nav .nav-icon-box:hover i.fa-solid, nav.bottom-nav .nav-icon-box.active a i, nav.bottom-nav .nav-icon-box:hover i.fa-solid{
-	color: #212529;
-}
+nav.side-nav .nav-icon-box.active, nav.side-nav .nav-icon-box:hover, nav.bottom-nav .nav-icon-box.active, nav.bottom-nav .nav-icon-box:hover {	background: #8ff3ff; }
+nav.side-nav .nav-icon-box.active a i, nav.side-nav .nav-icon-box:hover i.fa-solid, nav.bottom-nav .nav-icon-box.active a i, nav.bottom-nav .nav-icon-box:hover i.fa-solid {	color: #212529; }
 nav.side-nav .nav-icon-box:hover .nav-text{
 	right: 24px;
 	opacity: 1;
@@ -150,9 +138,7 @@ nav.bottom-nav .nav-icon-box{
 	text-align: center;
 	text-transform: uppercase;
 }
-.headline h2 span{
-  color: #8ff3ff;
-}
+.headline h2 span{  color: #8ff3ff; }
 .back-text{
 	position: absolute;
   top: 50%;
@@ -185,9 +171,7 @@ nav.bottom-nav .nav-icon-box{
   margin-top: 50px;
   width: 75%;
 }
-.hero{
-	min-height: 90.6vh;
-}
+.hero{	min-height: 90.6vh; }
 .header-section h1, .title, .word{
 	font-size: 55px;
 	font-weight: 600;
@@ -239,11 +223,8 @@ nav.bottom-nav .nav-icon-box{
 	height: 100%;
 	z-index: -2;
 }
-.btn_cv:hover, .form-box .send-btn:hover{
-	background: transparent;
-	color: #fff;
-}
-.btn_cv:hover.btn_cv::before, .form-box .send-btn:hover.send-btn::before{	left: 0px;}
+.btn_cv:hover, .form-box .send-btn:hover {	color: #fff; }
+.btn_cv:hover.btn_cv::before, .form-box .send-btn:hover.send-btn::before {	left: 0px;}
 .btn-more i{	font-size: 18px;}
 
 /* --- Social Link CSS --- */
@@ -261,18 +242,14 @@ ul.social-icon li{
   text-align: center;
   transition: all 0.5s ease-in-out;
 }
-ul.social-icon li:hover{
-	background: #8ff3ff;
-}
+ul.social-icon li:hover {	background: #8ff3ff; }
 ul.social-icon li a{
 	display: block;
 	font-size: 20px;
 	color: #fff;
-  transition: all 0.3s ease-in-out;
 }
-ul.social-icon li:hover .fa-brands{
-	color: #212529;
-}
+ul.social-icon li a i {	transition: all 0.3s ease-in-out; }
+ul.social-icon li:hover .fa-brands {	color: #212529; }
 
 /* --- Animated text of Home CSS --- */
 @-webkit-keyframes web { 0% {transform: translateY(0);} 26.6666666667% {transform: translateY(0);	opacity: 1;} 33.3333333333% {transform: translateY(-100%);	opacity: 0;}	33.3343333333% {transform: translateY(100%);	opacity: 0;}	33.3363333333% {transform: translateY(100%);	opacity: 1;}	93.3333333333% {transform: translateY(100%);}	100% {transform: translateY(0);}}
@@ -341,9 +318,7 @@ ul.social-icon li:hover .fa-brands{
 * About Page CSS Start
 * ==========================
 */
-.about-section, .portfolio-section{
-	margin-bottom: 50px;
-}
+.about-section, .portfolio-section {	margin-bottom: 50px; }
 
 /* About & Portfolio Section's Tab CSS */
 .about-section .tabs, .portfolio-section .portfolio-tabs{
@@ -356,21 +331,47 @@ ul.social-icon li:hover .fa-brands{
 	gap: 30px;
 	margin-bottom: 30px;
 }
-.about-section .tabs ul li, .portfolio-section .portfolio-tabs ul li{
-	background: #003d45;
+.about-section .tabs ul li.tab-list, .portfolio-section .portfolio-tabs ul li.port-list{
+	position: relative;
+	overflow: hidden;
   border-radius: 6px;
-  padding: 15px 40px;
+  padding: 14px 40px;
   text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-.about-section .tabs ul li:hover, .about-section .tabs ul li.active, .portfolio-section .portfolio-tabs ul li:hover, .portfolio-section .portfolio-tabs ul li.mixitup-control-active{
+.about-section .tabs ul li.tab-list::before, .portfolio-section .portfolio-tabs ul li.port-list::before{
+	content: "";
+	position: absolute;
 	background: #8ff3ff;
-  color: #212529;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: 0.4s all ease-in-out;
 }
+.about-section .tabs ul li.tab-list::after, .portfolio-section .portfolio-tabs ul li.port-list::after{
+	content: "";
+	position: absolute;
+	background: #003d45;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.about-section .tabs ul li.tab-list.active, .portfolio-section .portfolio-tabs ul li.mixitup-control-active{
+	background: #8ff3ff;
+  color: #000;
+}
+.about-section .tabs ul li.tab-list:hover, .portfolio-section .portfolio-tabs ul li:hover{	color: #000;	}
+.about-section .tabs ul li:hover.tab-list::before, .portfolio-section .portfolio-tabs ul li:hover.port-list::before{	left: 0px; }
 
 /* About Row CSS */
 .about-row{
@@ -378,9 +379,7 @@ ul.social-icon li:hover .fa-brands{
 	margin-top: 20px;
 	align-items: center;
 }
-.my_photo{
-	width: 80%;
-}
+.my_photo {	width: 80%; }
 .about-info h3, .contact-intro h3, .edu-row .block-title h3{
 	margin-bottom: 15px;
 	font-size: 23px;
@@ -391,25 +390,17 @@ ul.social-icon li:hover .fa-brands{
   word-spacing: 2px;
   line-height: 26px;
 }
-.about-info ul{
-	margin-bottom: 35px;
-}
-.about-info li{
-	margin: 6px 0 0;
-}
+.about-info ul {	margin-bottom: 35px; }
+.about-info li {	margin: 6px 0 0; }
 .about-info li span{
 	display: inline-block;
   width: 140px;
 	color: #ebebeb;
 }
-.about-info li a{
-	color: #ebebeb;
-}
+.about-info li a { color: #ebebeb; }
 
 /* Skill Row CSS */
-.skill-row, .edu-row{
-	margin-top: 30px;
-}
+.skill-row, .edu-row { margin-top: 30px; }
 .skills{
 	display: flex;
 	flex-wrap: wrap;
@@ -441,34 +432,22 @@ ul.social-icon li:hover .fa-brands{
   font-weight: 600;
   color: #ebebeb;
 }
-.skill-box:hover p, .skill-box .logo-box p{
-  color: #8ff3ff;
-}
-.skill-box:hover .logo-box p{
-  color: #fff;
-}
+.skill-box:hover p, .skill-box .logo-box p {  color: #8ff3ff; }
+.skill-box:hover .logo-box p {  color: #fff; }
 .skill-box .logo-img{
 	margin: 0 auto;
 	width: 60px;
 	height: 110px;
 	transition: all 0.3s ease-in-out;
 }
-.skill-box:hover .logo-img{
-	width: 70px;
-}
-.php .logo-img{
-	padding-top: 26px;
-}
-.tailwind .logo-img, .sass .logo-img{
-	padding-top: 20px;
-}
+.skill-box:hover .logo-img {	width: 70px; }
+.php .logo-img {	padding-top: 26px; }
+.tailwind .logo-img, .sass .logo-img {	padding-top: 20px; }
 .skill-box .logo-img img{
 	filter: grayscale(90%);
 	transition: all 0.3s ease-in-out;
 }
-.skill-box:hover .logo-img img{
-	filter: grayscale(0%);
-}
+.skill-box:hover .logo-img img {	filter: grayscale(0%); }
 
 /* Education & Experience Row CSS */
 .edu-row .block-title h3{
@@ -526,9 +505,7 @@ ul.social-icon li:hover .fa-brands{
   font-size: 15px;
   line-height: 1.4em
 }
-.timeline .right-part .item-period i{
-  margin-right: 5px;
-}
+.timeline .right-part .item-period i {  margin-right: 5px; }
 .timeline .right-part .item-institute{
   display: block;
   margin: 0 0 15px;
@@ -550,9 +527,7 @@ ul.social-icon li:hover .fa-brands{
 	margin: 0;
   font-size: 15px;
 }
-.timeline .right-part p a{
-	color: #ebebeb;
-}
+.timeline .right-part p a {	color: #ebebeb; }
 /****** About Page CSS End ******/
 
 
@@ -579,9 +554,7 @@ ul.social-icon li:hover .fa-brands{
 	display: flex;
 	align-items: center;
 }
-.client, .client-review{
-	margin-bottom: 25px;
-}
+.client, .client-review {	margin-bottom: 25px; }
 .client-review p{
 	font-size: 16px;
   line-height: 26px;
@@ -592,12 +565,8 @@ ul.social-icon li:hover .fa-brands{
 	height: 59px;
 	overflow: hidden;
 }
-.client-img img{
-	border-radius: 50%;
-}
-.client-info{
-	margin-left: 30px;
-}
+.client-img img {	border-radius: 50%; }
+.client-info {	margin-left: 30px; }
 .client-info h5{
 	margin-top: 6px;
 	font-size: 16px;
@@ -631,9 +600,7 @@ ul.social-icon li:hover .fa-brands{
 * FAQ Section CSS Start
 * ==========================
 */
-.faq-section{
-	margin-bottom: 80px;
-}
+.faq-section {	margin-bottom: 80px; }
 /* Accordion CSS */
 .accordion__wrapper {
   background-color: #003d454d;
@@ -695,18 +662,10 @@ ul.social-icon li:hover .fa-brands{
 * Portfolio Page CSS Start
 * ==========================
 */
-.portfolio-section .portfolio-tabs ul li a{
-	color: #fff;
-}
-.portfolio-section .portfolio-tabs ul li:hover a, .portfolio-section .portfolio-tabs ul li.mixitup-control-active a{
-	color: #212529;
-}
-.item-grid{
-	margin-top: 25px;
-}
-.item-grid .port {
-  padding: 10px;
-}
+.portfolio-section .portfolio-tabs ul li a {	color: #fff; }
+.portfolio-section .portfolio-tabs ul li:hover a, .portfolio-section .portfolio-tabs ul li.mixitup-control-active a {	color: #212529; }
+.item-grid {	margin-top: 25px; }
+.item-grid .port {  padding: 10px; }
 .item-grid .item{
 	position: relative;
   background: rgb(143 243 255 / 10%);
@@ -734,19 +693,13 @@ ul.social-icon li:hover .fa-brands{
   margin-bottom: 10px;
 	color: #a2a2a2;
 }
-.item-grid .item .item-intro h3.name{
-	font-size: 25px;
-}
+.item-grid .item .item-intro h3.name {	font-size: 25px; }
 .item-intro i{
 	font-size: 25px;
 	color: #fff;
 }
-.item-grid .item:hover .item-intro{
-	opacity: 1;
-}
-.portfolio-img{	
-	height: 450px;
-}
+.item-grid .item:hover .item-intro {	opacity: 1; }
+.portfolio-img {	height: 450px; }
 .portfolio-img img{
 	width: 100%;
 	height: 100%;
@@ -754,9 +707,7 @@ ul.social-icon li:hover .fa-brands{
 	object-position: top center;
 	transition: all 4s ease-in-out;
 }
-.item-grid .item:hover .screenshot{
-	object-position: bottom center;
-}
+.item-grid .item:hover .screenshot {	object-position: bottom center; }
 /****** Portfolio Page CSS End ******/
 
 
@@ -765,9 +716,7 @@ ul.social-icon li:hover .fa-brands{
 * Contact Page CSS Start
 * ==========================
 */
-.contact-section{
-	margin: 15px 0px 75px;
-}
+.contact-section {	margin: 15px 0px 75px; }
 .contact-row{
 	position: relative;
 	background: url('../img/map-light.png') no-repeat center left;
@@ -783,9 +732,7 @@ ul.social-icon li:hover .fa-brands{
 	height: 100%;
 	z-index: -1;
 }
-.contact-intro{
-	margin-bottom: 30px;
-}
+.contact-intro {	margin-bottom: 30px; }
 .info-box{
 	display: flex;
 	gap: 20px;
@@ -800,14 +747,10 @@ ul.social-icon li:hover .fa-brands{
 	margin-bottom: 5px;
 	font-size: 17px;
 }
-.info p{
-	font-size: 15px;
-}
+.info p {	font-size: 15px; }
 
 /* --- Social Platform CSS --- */
-.message{
-	margin-top: 30px;
-}
+.message {	margin-top: 30px; }
 .message ul.social-icon{
 	gap: 22px;
 	margin-top: 0px;
@@ -823,9 +766,7 @@ ul.social-icon li:hover .fa-brands{
 	font-size: 15px;
 	color: #fff;
 }
-.form-box label span{
-	color: #e33e32;
-}
+.form-box label span {	color: #e33e32; }
 .form-box input, .form-box textarea{
 	background: #02050A;
 	border: none;
@@ -852,8 +793,7 @@ ul.social-icon li:hover .fa-brands{
 }
 
 /* Footer CSS */
-footer{
-	margin-bottom: 40px;}
+footer {	margin-bottom: 40px; }
 footer p{
 	font-size: 14px;
 	text-align: center;
