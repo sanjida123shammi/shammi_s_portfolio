@@ -694,8 +694,8 @@ ul.social-icon li:hover .fa-brands {	color: #212529; }
   transition: all 0.3s ease-in-out;
 }
 .item-grid .item .item-intro h5.category{
-	font-size: 16px;
   margin-bottom: 10px;
+	font-size: 16px;
 	color: #a2a2a2;
 }
 .item-grid .item .item-intro h3.name {	font-size: 25px; }
