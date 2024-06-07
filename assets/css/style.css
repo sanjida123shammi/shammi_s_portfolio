@@ -397,6 +397,11 @@ ul.social-icon li:hover .fa-brands {	color: #212529; }
   width: 140px;
 	color: #ebebeb;
 }
+.about-info li span:nth-child(2){
+	width: 200px;
+	margin-left: 38px;
+	color: #A2A2A2;
+}
 .about-info li a { color: #ebebeb; }
 
 /* Skill Row CSS */
@@ -444,7 +449,7 @@ ul.social-icon li:hover .fa-brands {	color: #212529; }
 .php .logo-img {	padding-top: 26px; }
 .tailwind .logo-img, .sass .logo-img {	padding-top: 20px; }
 .skill-box .logo-img img{
-	filter: grayscale(90%);
+	filter: grayscale(50%);
 	transition: all 0.3s ease-in-out;
 }
 .skill-box:hover .logo-img img {	filter: grayscale(0%); }
@@ -487,7 +492,7 @@ ul.social-icon li:hover .fa-brands {	color: #212529; }
   background-color: #02050A;
   border: 2px solid #8ff3ff;
   border-radius: 50%;
-  margin-top: 35px;
+  margin-top: 50px;
   margin-left: -7px;
   width: 15px;
   height: 15px;

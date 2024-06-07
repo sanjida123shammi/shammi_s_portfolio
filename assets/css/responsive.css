@@ -62,18 +62,27 @@
 }
 
 
-@media (max-width: 1199px){	
+@media (max-width: 1199px){
+	.btn_cv, .form-box .send-btn {width: 205px;    font-size: 13px;}
 	.back-text span {font-size: 83px;}
 	.header-section h1, .title, .word, .headline h2 {font-size: 42px;}
-	.about-info p, .about-info li, .timeline .right-part p {word-spacing: 2px;    line-height: 24px;}
+	.about-section .tabs ul li.tab-list, .portfolio-section .portfolio-tabs ul li.port-list {padding: 12px 30px;    font-size: 14px;}
+	.about-info p, .about-info li, .timeline .right-part p {font-size: 15px;	word-spacing: 2px;    line-height: 24px;}
 	.about-info li span {width: 120px;}
+	.skill-box {max-width: 190px;}
+	.skill-box .logo-box {height: 190px;}
+	.skill-box .logo-img {width: 50px;    height: 100px;}
+	.skill-box:hover .logo-img {width: 60px;}
+	.exp-col {margin-top: 55px;}
+	.edu-row .block-title h3 {margin-bottom: 50px;}
+	.accordion__answer {font-size: 15px;}
 	.item {width: 80%;}
-	.portfolio-img {height: 530px;}	
+	.portfolio-img {height: 530px;}
 }
 
 
 @media (max-width: 1024px){
-	.back-text {left: 45%;    transform: translate(-40%, -50%);}
+	.about-headline .back-text {left: 45%;    transform: translate(-40%, -50%);}
 }
 
 
@@ -91,40 +100,130 @@
 	nav.side-nav{display: none;}
 	nav.bottom-nav{display: block;}
 	nav.bottom-nav .nav-icon-box a i {font-size: 15px !important;}
-    footer {margin-bottom: 100px;}
+    .about-headline .back-text {left: 40%;    transform: translate(-30%, -50%);}
+	.back-text span {font-size: 78px;}
+    .my_photo {width: 55%;    margin: 0 auto 20px;}
+    .skills {justify-content: space-evenly;}
+    .skill-box {margin-bottom: 15px;}
+    .edu-row .timeline .timeline-item {width: 100%;}
+    .client-review p {font-size: 15px;}
+    .accordion__wrapper {padding: 40px;}
+    .accordion__question {font-size: 15px;    line-height: 25px;}
+    .accordion__answer {padding: 1.3rem 0;		font-size: 14px;}
+    .accordion__icon {width: 1.8rem;    height: 1.8rem;}
+    footer {margin-bottom: 115px;}
 }
 
+@media (max-width: 950px){	.about-headline .back-text {left: 39%;    transform: translate(-29%, -50%);}	}
+
+@media (max-width: 910px){	.about-headline .back-text {left: 38%;    transform: translate(-28%, -50%);}	}
+
+@media (max-width: 853px){	.about-headline .back-text {left: 37%;}	}
+
+@media (max-width: 800px){	
+	.about-headline .back-text {left: 36%;}
+    .testimonial-section {margin: 60px 0;}
+}
 
 @media (max-width: 767px){
     .logo {width: 45%;}
-	.header-section h1, .title, .word, .headline h2 {font-size: 36px;}
+	.header-section h1, .title, .word {font-size: 36px;}
     .hero p {padding: 0 6%;}
+	.headline h2 {font-size: 34px;}
+	.about-headline .back-text {left: 34%;		transform: translate(-26%, -50%);}
+	.back-text span {font-size: 74px;}
+	.about-section .tabs ul, .portfolio-section .portfolio-tabs ul {gap: 20px;}
+    .about-section .tabs ul li.tab-list, .portfolio-section .portfolio-tabs ul li.port-list {padding: 12px 24px;}
+    .btn_cv, .form-box .send-btn {width: 210px;    font-weight: 500;}
+    .my_photo {width: 65%;        margin: 0 auto 20px;}
+    .skills {gap: 20px;}
+    .skill-box {max-width: 140px;}
+    .skill-box .logo-box {height: 145px;}
+    .skill-box .logo-img {width: 35px;    height: 70px;}
+    .skill-box:hover .logo-img {width: 45px;}
+    .edu-row .block-title h3 {margin-left: 25px;}
+    .item {width: 95%;}
+    .faq-section {margin-bottom: 50px;}
+    .accordion__title {margin-bottom: 3rem;    font-size: 28px;}
+    footer {margin-bottom: 100px;}
 }
 
+@media (max-width: 704px){	.about-headline .back-text {left: 28%;    transform: translate(-16%, -50%);}	}
+
+@media (max-width: 645px){	.about-headline .back-text {left: 19%;    transform: translate(-7%, -50%);}	}
+
+@media (max-width: 600px){	
+	.about-headline .back-text {transform: translate(-10%, -50%);}
+	.testimonial-section .headline {padding: 65px 0;}
+	.owl-dots {margin-top: 40px !important;}
+}
 
 @media (max-width: 575px){
-	.header-section h1, .title, .word, .headline h2 {font-size: 32px;}
+	.header-section h1, .title, .word {font-size: 32px;}
+	header {margin-top: 30px !important;}
+	.headline {padding: 60px 0;}
+	.headline h2 {font-size: 30px;}
 	.title {max-height: 7.5vw;    line-height: 7.5vw;}
 	.hero p {font-size: 15px;}
+	.about-headline .back-text {left: 17%;		transform: translate(-3%, -50%);}
+    .back-text span {font-size: 64px;	letter-spacing: 4px;}
+    .about-section .tabs ul li.tab-list, .portfolio-section .portfolio-tabs ul li.port-list {font-size: 13px;}
+    .about-info {padding: 5px 20px;}
+    .about-info ul {margin-bottom: 40px;}
+    .btn_cv, .form-box .send-btn {width: 205px;    padding: 13px;}
+    .edu-row .timeline .timeline-item {padding-bottom: 10px;}
+    .timeline .right-part .item-title {font-size: 16px;    line-height: 25px;}
+    .accordion__icon {width: 1.5rem;        height: 1.5rem;}
 }
-
 
 @media (max-width: 500px){
 	.logo{width: 49%;}
+	.about-section .tabs ul, .portfolio-section .portfolio-tabs ul {gap: 15px;}
+    .headline h2 {font-size: 28px;}
+    .about-headline .back-text {transform: translate(-3%, -50%);}
+    .back-text span {font-size: 60px;    letter-spacing: 1px;}
+    .about-section .tabs ul li.tab-list, .portfolio-section .portfolio-tabs ul li.port-list {padding: 10px 14px;}
+    .about-info li span:nth-child(2) {width: 170px;    margin-left: 25px;}
+    .btn_cv, .form-box .send-btn {width: 200px;        padding: 12px;        font-size: 12.5px;}
+    .timeline .right-part {padding: 20px;}
+    .accordion__wrapper {padding: 30px;}
+    .accordion__title {margin-bottom: 2rem;		font-size: 24px;}
+    .client, .client-review {margin-bottom: 22px;}
+    .about-info p, .about-info li, .timeline .right-part p, .client-review p, .client-info p, .client-info h5, .ratings i, .accordion__question {font-size: 14px;     line-height: 23px;}
 }
-
 
 @media (max-width: 430px){
     .logo {width: 52%;}
-	.header-section h1, .title, .word, .headline h2 {font-size: 30px;}
+	.header-section h1, .title, .word {font-size: 30px;}
+	.headline h2 {font-size: 24px;}
+    .back-text span {font-size: 52px;    letter-spacing: 0px;}
 	.title {max-height: 8vw;    line-height: 8vw;}
     .hero {min-height: 85.5vh;}
     .hero p {padding: 0 2%;}
+    .about-section .tabs ul, .portfolio-section .portfolio-tabs ul {gap: 15px;	flex-direction: column;}
+    .about-section .tabs ul li.tab-list, .portfolio-section .portfolio-tabs ul li.port-list {padding: 12px 24px;    font-size: 13px;    text-align: center;}
+    .my_photo {width: 80%;}
+    .about-info li span {width: 80px;}
+    .about-info li span:nth-child(2) {margin-left: 15px;}
+    .item {padding: 30px 28px;    width: 92%;}
+    .accordion__wrapper {padding: 20px;}
+    .accordion__title {font-size: 22px;}
 }
 
-
-@media (max-width: 375px){
+@media (max-width: 376px){
 	.hero {min-height: 80.5vh;}
     .logo {width: 56%;}
-	.header-section h1, .title, .word, .headline h2 {font-size: 26px;}
+	.header-section h1, .title, .word {font-size: 26px;}
+	.about-headline .back-text {transform: translate(-6%, -50%);}
+    .about-info li span {width: 70px;}
+    .about-info li span:nth-child(2) {margin-left: 10px;}
+    .client-info {margin-left: 15px;}
+    .accordion__title {font-size: 24px;    line-height: 38px;}
+}
+
+@media (max-width: 350px){
+	.headline h2 {font-size: 22px;}
+	.back-text span {font-size: 48px;}
+    .client-img {width: 70px;    height: 65px;}
+    .about-info {padding: 5px 0px;}
 }
