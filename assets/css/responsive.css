@@ -124,6 +124,7 @@
 
 
 @media (max-width: 375px){
+	.hero {min-height: 80.5vh;}
     .logo {width: 56%;}
 	.header-section h1, .title, .word, .headline h2 {font-size: 26px;}
 }
