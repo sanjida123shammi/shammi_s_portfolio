@@ -173,14 +173,14 @@ nav.bottom-nav .nav-icon-box{
 }
 .hero{	min-height: 90.6vh; }
 .header-section h1, .title, .word{
-	font-size: 55px;
+	font-size: 52px;
 	font-weight: 600;
 	text-transform: uppercase;
 	word-spacing: 8px;
 	color: #fff;
 }
 .hero p{
-	margin: 35px 0;
+	margin: 28px 0 35px;
 	padding-right: 30%;
 	font-size: 17px;
 	word-spacing: 2px;
@@ -308,7 +308,7 @@ ul.social-icon li:hover .fa-brands {	color: #212529; }
   grid-template-rows: auto;
   overflow: hidden;
   max-height: 4vw;
-  line-height: 5vw;
+  line-height: 4.8vw;
 }
 /****** Home Page CSS End ******/
 
@@ -470,14 +470,14 @@ ul.social-icon li:hover .fa-brands {	color: #212529; }
 	position: relative;
   display: table;
   table-layout: fixed;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   width: 95%;
 }
 .edu-row .timeline .side-line{
   position: absolute;
-  top: 0;
+  top: -12px;
   left: 1%;
-  bottom: 0;
+  bottom: 12px;
   width: 1px;
   background-color: #666;
 }
