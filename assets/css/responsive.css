@@ -172,7 +172,7 @@
 
 @media (max-width: 575px){
 	.header-section h1, .title, .word {font-size: 32px;}
-	header {margin-top: 30px !important;}
+	header {margin-top: 0px !important;}
 	.headline {padding: 60px 0;}
 	.headline h2 {font-size: 30px;}
 	.title {max-height: 7.5vw;    line-height: 7.5vw;}
@@ -183,8 +183,10 @@
     .about-info {padding: 5px 20px;}
     .about-info ul {margin-bottom: 40px;}
     .btn_cv, .form-box .send-btn {width: 205px;    padding: 13px;}
-    .edu-row .timeline .timeline-item {padding-bottom: 10px;}
+    .edu-row .timeline .side-line {top: 0px;	bottom: 0px;}
+    .edu-row .timeline .timeline-item {padding-bottom: 20px;}
     .timeline .right-part .item-title {font-size: 16px;    line-height: 25px;}
+    .about-info h3, .edu-row .block-title h3 {margin-bottom: 35px;    font-size: 20px;}
     .accordion__icon {width: 1.5rem;        height: 1.5rem;}
     .port .item {margin-bottom: 30px;	padding: 25px 25px 0 25px;		width: 75%;}
     .portfolio-img {height: 275px;}
