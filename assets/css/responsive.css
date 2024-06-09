@@ -7,7 +7,6 @@
 	.skill-box p {font-size: 15px;    font-weight: 500;}
 }
 
-
 @media (min-width: 2300px){
     nav.side-nav .nav-icon-box {width: 45px;    height: 45px;    line-height: 47px;}
 	nav.side-nav .nav-icon-box a i {font-size: 22px;}
@@ -30,6 +29,7 @@
 }
 
 
+/* Laptop Responsive */
 @media (max-width: 1440px){
 	nav.side-nav .nav-icon-box, ul.social-icon li {width: 35px;    height: 35px;    line-height: 35px;}
 	nav.side-nav .nav-icon-box a h2{height: 35px;    line-height: 36px;}
@@ -54,7 +54,6 @@
 	.item-grid .item .item-intro h3.name, .item-intro i {font-size: 22px;}
 }
 
-
 @media (max-width: 1306px){
 	.back-text span {font-size: 99px;}
 	.headline h2 {font-size: 50px;}
@@ -62,6 +61,7 @@
 }
 
 
+/* Tablet and Mobile Responsive */
 @media (max-width: 1199px){
 	.btn_cv, .form-box .send-btn {width: 205px;    font-size: 13px;}
 	.back-text span {font-size: 83px;}
@@ -82,11 +82,9 @@
     .item-grid .item .item-intro h3.name, .item-intro i {font-size: 20px;}
 }
 
-
 @media (max-width: 1024px){
 	.about-headline .back-text {left: 45%;    transform: translate(-40%, -50%);}
 }
-
 
 @media (max-width: 991px){
 	.header-section{background: url('../img/logo/res_bn_bg.png') no-repeat right top;	background-size: cover;}
@@ -108,7 +106,7 @@
     .skills {justify-content: space-evenly;}
     .skill-box {margin-bottom: 15px;}
     .edu-row .timeline .timeline-item {width: 100%;}
-    .client-review p {font-size: 15px;}
+    .client-review p, .contact-intro p {font-size: 15px;}
     .accordion__wrapper {padding: 40px;}
     .accordion__question {font-size: 15px;    line-height: 25px;}
     .accordion__answer {padding: 1.3rem 0;		font-size: 14px;}
@@ -116,21 +114,26 @@
     .port .item {margin-bottom: 20px;	padding: 20px 20px 0 20px;}
     .portfolio-img {height: 275px;}
     .item-grid .item .item-intro {left: 12px;}
+    .contact-headline {margin: 25px auto 0;    padding: 60px 0;}
+    .contact-section {margin-bottom: 60px;}
+    .contact-intro {margin-bottom: 25px;}
+    .contact-intro h3 {margin-bottom: 12px;    font-size: 22px;}
+    .contact-info {display: flex;    justify-content: space-between;}
+    .info-box {background: linear-gradient(to left, rgb(16 63 69 / 50%), rgb(23 31 40 / 40%));	border-radius: 5px;  gap: 15px;	margin-bottom: 0px;   padding: 12px 15px;}
+    .info-icon i {font-size: 22px;    color: #8ff3ff;}
+    .info h4 {margin-bottom: 2px;    font-size: 16px;}
+    .info p {font-size: 14px;}
+    .message ul.social-icon {margin-bottom: 40px;    justify-content: flex-start;}
+    .contact-row {background: none;}
     footer {margin-bottom: 115px;}
 }
 
-@media (max-width: 950px){	.about-headline .back-text {left: 39%;    transform: translate(-29%, -50%);}	}
+@media (max-width: 950px) {	.about-headline .back-text {left: 39%;    transform: translate(-29%, -50%);} }
+@media (max-width: 910px) {	.about-headline .back-text {left: 38%;    transform: translate(-28%, -50%);} }
+@media (max-width: 853px) {	.about-headline .back-text {left: 37%;}	}
+@media (max-width: 800px) {.about-headline .back-text {left: 36%;}    .testimonial-section {margin: 60px 0;} }
 
-@media (max-width: 910px){	.about-headline .back-text {left: 38%;    transform: translate(-28%, -50%);}	}
-
-@media (max-width: 853px){	.about-headline .back-text {left: 37%;}	}
-
-@media (max-width: 800px){	
-	.about-headline .back-text {left: 36%;}
-    .testimonial-section {margin: 60px 0;}
-}
-
-@media (max-width: 767px){
+@media (max-width: 767px) {
     .logo {width: 45%;}
 	.header-section h1, .title, .word {font-size: 36px;}
     .hero p {padding: 0 6%;}
@@ -155,18 +158,17 @@
     .port .item {margin-bottom: 30px;    padding: 30px 30px 0 30px;}
     .portfolio-img {height: 350px;}
     .item-grid .item .item-intro {left: 18px;}
+    .contact-info {flex-wrap: wrap;	        gap: 20px;}
+    .info-box {background: none;    margin-right: 60px;		margin-bottom: 6px;    padding: 0;}
+    .form-box {padding: 25px;}
+    .form-box input, .form-box textarea {padding: 13px 15px;}
     footer {margin-bottom: 100px;}
 }
 
-@media (max-width: 704px){	.about-headline .back-text {left: 28%;    transform: translate(-16%, -50%);}	}
+@media (max-width: 704px) {	.about-headline .back-text {left: 28%;    transform: translate(-16%, -50%);} }
+@media (max-width: 645px) {	.about-headline .back-text {left: 19%;    transform: translate(-7%, -50%);}	}
 
-@media (max-width: 645px){	.about-headline .back-text {left: 19%;    transform: translate(-7%, -50%);}	}
-
-@media (max-width: 600px){	
-	.about-headline .back-text {transform: translate(-10%, -50%);}
-	.testimonial-section .headline {padding: 65px 0;}
-	.owl-dots {margin-top: 40px !important;}
-}
+@media (max-width: 600px) {	.about-headline .back-text {transform: translate(-10%, -50%);}	.testimonial-section .headline {padding: 65px 0;}	.owl-dots {margin-top: 40px !important;} }
 
 @media (max-width: 575px){
 	.header-section h1, .title, .word {font-size: 32px;}
@@ -187,6 +189,8 @@
     .port .item {margin-bottom: 30px;	padding: 25px 25px 0 25px;		width: 75%;}
     .portfolio-img {height: 275px;}
     .item-grid .item .item-intro {left: 15px;}
+    .contact-section {margin: 0px 0px 60px;}
+    .form-box input, .form-box textarea {padding: 12px;}
 }
 
 @media (max-width: 500px){
@@ -202,14 +206,21 @@
     .accordion__wrapper {padding: 30px;}
     .accordion__title {margin-bottom: 2rem;		font-size: 24px;}
     .client, .client-review {margin-bottom: 22px;}
-    .about-info p, .about-info li, .timeline .right-part p, .client-review p, .client-info p, .client-info h5, .ratings i, .accordion__question {font-size: 14px;     line-height: 23px;}
+    .about-info p, .about-info li, .timeline .right-part p, .client-review p, .client-info p, .client-info h5, .ratings i, .accordion__question, .contact-intro p {font-size: 14px;     line-height: 23px;}
+    .form-row {display: block;}
+    .form-row .form-group {margin-bottom: 20px;}
 }
 
 @media (max-width: 475px){
     .about-section, .portfolio-section {margin-bottom: 20px;}
     .port .item {margin-bottom: 25px;    padding: 20px 20px 0 20px;    width: 90%;}
     .item-grid .item .item-intro h3.name, .item-intro i {font-size: 18px;}
-    .item-grid .item .item-intro h5.category {font-size: 14px;}
+    .item-grid .item .item-intro h5.category, .form-box label {font-size: 14px;}
+    .contact-section {margin: 0px 0px 45px;}
+    .contact-intro h3 {margin-bottom: 10px;    font-size: 19px;}
+    .info h4 {font-size: 15px;}
+    .form-box {padding: 20px;}
+    .form-box input, .form-box textarea {padding: 11px;}
 }
 
 @media (max-width: 430px){

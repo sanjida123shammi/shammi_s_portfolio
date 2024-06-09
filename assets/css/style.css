@@ -724,8 +724,8 @@ ul.social-icon li:hover .fa-brands {	color: #212529; }
 .contact-section {	margin: 15px 0px 75px; }
 .contact-row{
 	position: relative;
-	background: url('../img/map-light.png') no-repeat center left;
-	background-size: 75%;
+	background: url('../img/map-light.png') no-repeat center center;
+	background-size: 70%;
 	z-index: 1;
 }
 .contact-row::before{
