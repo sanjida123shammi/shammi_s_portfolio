@@ -171,6 +171,7 @@
 @media (max-width: 600px) {	.about-headline .back-text {transform: translate(-10%, -50%);}	.testimonial-section .headline {padding: 65px 0;}	.owl-dots {margin-top: 40px !important;} }
 
 @media (max-width: 575px){
+	.header-section{background-position:  left bottom;}
 	.header-section h1, .title, .word {font-size: 32px;}
 	header {margin-top: 0px !important;}
 	.headline {padding: 60px 0;}
